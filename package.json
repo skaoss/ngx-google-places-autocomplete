@@ -6,7 +6,7 @@
     "yarn": "yarn",
     "build": "yarn run clean && ngc -p src/tsconfig.webpack.json && rollup -c rollup.config.js",
     "clean": "yarn run rimraf -- compiled && yarn run rimraf -- dist && yarn run rimraf -- github",
-    "github:release" : "yarn run bestzip build.zip ./dist/* && node publish_release_github.js"
+    "github:release": "yarn run bestzip build.zip ./dist/* && node publish_release_github.js"
   },
   "license": "MIT",
   "typings": "ngx-google-places-autocomplete.d.ts",
@@ -57,7 +57,7 @@
     "@ngtools/webpack": "^1.8.5",
     "rollup": "0.41.4",
     "rollup-plugin-copy": "0.2.3",
-    "bestzip" : "^1.1.4",
-    "publish-release" : "^1.4.0"
+    "bestzip": "^1.1.4",
+    "publish-release": "^1.4.0"
   }
 }
